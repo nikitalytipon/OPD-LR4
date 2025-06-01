@@ -27,11 +27,11 @@ class TestSite(unittest.TestCase):
         self.assertEqual(names(" "), "That's wrong")
 
     def test_secondname(self):
-        self.assertEqual(secondnames("Кибкало"), "Кибкало")
+        self.assertEqual(secondnames("Лихобабин"), "Лихобабин")
         self.assertEqual(secondnames(1.2), "That's wrong")
         self.assertEqual(secondnames(" "), "That's wrong")
 
     def test_lastnames(self):
-        self.assertEqual(lastnames("Александрович"), "Александрович")
+        self.assertEqual(lastnames("Валерьевич"), "Валерьевич")
         self.assertEqual(lastnames(1.2), "That's wrong")
         self.assertEqual(lastnames(" "), "That's wrong")
